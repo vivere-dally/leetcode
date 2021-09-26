@@ -14,7 +14,10 @@ param (
     $Name
 )
 
-$dirName = "${PSScriptRoot}/src/${Difficulty}_${Id}_${Name}"
+$fName = $Name.Split(' ')
+$fName[0] = $fName[0].ToLowerInvariant()
+$fName = $fName -join ''
+$dirName = "${PSScriptRoot}/src/${Difficulty}_${Id}_${fName}"
 $cppFileName = "$dirName/main.cpp"
 $mdFileName = "$dirName/README.md"
 
