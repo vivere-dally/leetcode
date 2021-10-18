@@ -16,7 +16,7 @@ struct TreeNode
 class Solution
 {
 private:
-    void inorderTraversalRec(TreeNode *root, vector<int> &v)
+    void preorderTraversalRec(TreeNode *root, vector<int> &v)
     {
         if (root == nullptr)
         {
@@ -25,13 +25,13 @@ private:
 
         if (root->left != nullptr)
         {
-            inorderTraversalRec(root->left, v);
+            preorderTraversalRec(root->left, v);
         }
 
         v.push_back(root->val);
         if (root->right != nullptr)
         {
-            inorderTraversalRec(root->right, v);
+            preorderTraversalRec(root->right, v);
         }
     }
 
@@ -39,7 +39,7 @@ public:
     vector<int> inorderTraversal(TreeNode *root)
     {
         vector<int> v;
-        this->inorderTraversalRec(root, v);
+        this->preorderTraversalRec(root, v);
         return v;
     }
 };
