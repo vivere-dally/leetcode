@@ -18,25 +18,45 @@ $fName = $Name.Split(' ')
 $fName[0] = $fName[0].ToLowerInvariant()
 $fName = $fName -join ''
 $dirName = "${PSScriptRoot}/src/${Difficulty}/${Id}_${fName}"
-$cppFileName = "$dirName/main.cpp"
 $mdFileName = "$dirName/README.md"
 
 New-Item -Path $dirName -ItemType Directory | Out-Null
-New-Item -Path $cppFileName -ItemType File | Out-Null
 New-Item -Path $mdFileName -ItemType File | Out-Null
 
-@"
-#include <iostream>
-using namespace std;
+$content, $fileName = switch (Get-Random -Minimum 0 -Maximum 2) {
+    0 {
+        @"
+    #include <iostream>
+    using namespace std;
+    
+    // Solutin class here
+    
+    int main()
+    {
+        Solution s;
+        cout << s. << endl;
+        return 0;
+    }
+"@, "$dirnName/main.cpp"
+        break;
+    }
+    1 {
+        @"
+// Solution class here
 
-// Solutin class here
-
-int main()
-{
-    Solution s;
-    cout << s. << endl;
-    return 0;
+class Main {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.);
+    }
 }
-"@ | Set-Content -Path $cppFileName -Encoding utf8
+"@, "$dirName/Main.java"
+        break;
+    }
+}
+
+
+New-Item -Path $fileName -ItemType File | Out-Null
+$content | Set-Content -Path $fileName -Encoding utf8
 
 Write-Host 'Happy coding!' -ForegroundColor Green
