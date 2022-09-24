@@ -1,4 +1,6 @@
-# [735 Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)
+# [735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)
+
+## Problem
 
 We are given an array asteroids of integers representing asteroids in a row.
 
@@ -35,6 +37,8 @@ Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulti
 - `2 <= asteroids.length <= 104`
 - `-1000 <= asteroids[i] <= 1000`
 - `asteroids[i] != 0`
+
+## Solution
 
 *Ideas:*
 
@@ -86,3 +90,10 @@ class Solution {
     }
 }
 ```
+
+*Analysis:*
+
+Let `N` be the length of the input array.
+
+- `S: O(N)`: We use a stack which could contain all the elements in the array in the worst case. We also build a result array which has the same length as the Stack, thus it would be `O(3 * N) -> O(N)`
+- `T: O(N)`: We check every asteroid at least once, but as every asteroid that loses a collision is never checked again, we are guaranteed `O(N)`.
