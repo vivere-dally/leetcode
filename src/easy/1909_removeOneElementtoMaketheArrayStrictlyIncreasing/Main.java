@@ -25,16 +25,16 @@ class Solution {
     }
 }
 
-class Main {
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        System.out.println(s.canBeIncreasing(new int[] { 1, 2, 10, 5, 7 }));
-        System.out.println(s.canBeIncreasing(new int[] { 2, 3, 1, 2 }));
-        System.out.println(s.canBeIncreasing(new int[] { 1, 1, 1 }));
-        System.out.println(s.canBeIncreasing(new int[] { 1, 2, 3 }));
-        System.out.println(s.canBeIncreasing(new int[] { 100, 21, 100 }));
-        System.out.println(s.canBeIncreasing(new int[] { 10, 100, 21, 100 }));
-        System.out.println(s.canBeIncreasing(new int[] { 105, 924, 32, 968 }));
-        System.out.println(s.canBeIncreasing(new int[] { 103, 191, 918, 124, 658 }));
-    }
-}
+// class Main {
+//     public static void main(String[] args) {
+//         Solution s = new Solution();
+//         System.out.println(s.canBeIncreasing(new int[] { 1, 2, 10, 5, 7 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 2, 3, 1, 2 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 1, 1, 1 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 1, 2, 3 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 100, 21, 100 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 10, 100, 21, 100 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 105, 924, 32, 968 }));
+//         System.out.println(s.canBeIncreasing(new int[] { 103, 191, 918, 124, 658 }));
+//     }
+// }

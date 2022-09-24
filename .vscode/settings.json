@@ -12,7 +12,12 @@
         }
     },
     "java.project.sourcePaths": [
-        "src/easy/1909_removeOneElementtoMaketheArrayStrictlyIncreasing",
-        "src/medium/96_uniqueBinarySearchTrees"
+        // "src/medium/6_zigzagConversions"
+        // "src/medium/1462_courseScheduleIV"
+        // "src/hard/23_mergeKSortedLists"
+        // "src/hard/76_minimumWindowSubstring"
+        // "src/medium/91_decodeWays"
+        // "src/medium/143_reorderList"
+        "src/hard/212_wordSearchII"
     ]
 }

@@ -10,9 +10,9 @@
     },
     {
       "type": "java",
-      "name": "Java",
+      "name": "Launch Main",
       "request": "launch",
-      "mainClass": "${fileDirname}\\Main.java"
+      "mainClass": "${fileDirname}\\${fileBasename}"
     },
     {
       "name": "newSol",
