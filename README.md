@@ -8,5 +8,7 @@
   - [[Stack](TAGS.md#stack)]
 - [394. Decode String](medium/394_DecodeString.md) **24 Sep 2022**
   - [[Recursion](TAGS.md#recursion)], [[StringBuilder](TAGS.md#stringbuilder)]
+- [438. Find All Anagrams in a String](medium/438_FindAllAnagramsInAString.md) **25 Sep 2022**
+  - [[String](TAGS.md#string)], [[SlidingWindow](TAGS.md#slidingwindow)], [[Queue](TAGS.md#queue)]
 
 ## Hard
